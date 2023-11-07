@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+
+   
+</head>
+<body>
+    <div class="container">
+        <section class="custom-section" id="section1">
+            <h2>Consulta de Estudiantes</h2>
+            <button class="custom-button" type="button">Ver Estudiantes</button>
+        </section>
+
+        <!-- ... (cal) -->
+
+        <section class="custom-section" id="section2">
+            <h2>Consulta de calificaciones</h2>
+            <input  class="custom-input" type="text" id="studentIdInput" placeholder="Ingrese ID del estudiante">
+  <button  class="custom-button" onclick="abrirModal()">Ver Calificaciones</button>
+
+  <div id="modal" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" onclick="cerrarModal()">&times;</span>
+      <h2>Calificaciones</h2>
+      <div id="calificaciones"></div>
+    </div>
+  </div>
+        </section>
+
+        <!-- ... (cal) -->
+
+        <section class="custom-section" id="section3">
+            <h2>Añadir Nuevo Estudiante</h2>
+            <form>
+                <input class="custom-input" type="text" placeholder="Nombre">
+                <button class="custom-button" type="button">Añadir Estudiante</button>
+            </form>
+        </section>
+        <section class="custom-section" id="section4">
+            <h2>Actualizar Estudiante</h2>
+            <form>
+                <input class="custom-input" type="text" placeholder="ID del Estudiante">
+                <input class="custom-input" type="text" placeholder="Nuevo Nombre">
+                <button class="custom-button" type="button">Actualizar</button>
+            </form>
+        </section>
+        <section class="custom-section" id="section5">
+            <h2>Borrar Estudiante</h2>
+            <form>
+                <input class="custom-input" type="text" placeholder="ID del Estudiante">
+                <button class="custom-button" type="button">Borrar Estudiante</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Lista de Estudiantes</h2>
+            <div id="studentList"></div>
+        </div>
+    </div>
+
+  
+
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
